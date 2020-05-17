@@ -1,18 +1,16 @@
-//Create a react app from scratch.
-//It should display a h1 heading.
-//It should display an unordered list (bullet points).
-//It should contain 3 list elements.
 import React from "react";
 import ReactDOM from "react-dom";
 
+const firstName = "Christian";
+const lastName = "Rua";
+const luckyNumber = 7;
+
 ReactDOM.render(
   <div>
-    <h1>this is a List</h1>
-    <ul>
-      <li>item 1</li>
-      <li>item 2</li>
-      <li>item 3</li>
-    </ul>
+    <h1>
+      Hello {`${firstName} ${lastName}, whenever you type, thats appears`}!
+    </h1>
+    <p>Your lucky number is {luckyNumber}</p>
   </div>,
   document.getElementById("root")
 );
