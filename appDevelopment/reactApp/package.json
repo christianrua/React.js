@@ -1,0 +1,32 @@
+{
+  "name": "reactapp",
+  "version": "1.0.0",
+  "description": "react practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christianrua/React.js.git"
+  },
+  "keywords": [
+    "react.js"
+  ],
+  "author": "christian rua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christianrua/React.js/issues"
+  },
+  "homepage": "https://github.com/christianrua/React.js#readme",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
