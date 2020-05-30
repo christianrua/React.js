@@ -1,21 +1,20 @@
 import React from "react";
+import Detail from "./Detail";
+import Avatar from "./Avatar"
 
 function Card(props){
     return (
         <div className="card">
-        <div className="top">
-          <h2 className="name">{props.name}</h2>
-          <img 
-            className="circle-img"
-            src={props.img}//"https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
-            alt="avatar_img"
-          />
+          <div className="top">
+              <Detail info={props.id} />
+              <h2 className="name">{props.name}</h2>
+              <Avatar img={props.image} /> 
+          </div>
+          <div className="bottom">
+            <Detail info={props.phone} />
+            <Detail info={props.email} />
+          </div>
         </div>
-        <div className="bottom">
-          <p className="info">{props.phone}</p>
-          <p className="info">{props.email}</p>
-        </div>
-      </div>
     );
 }
 
