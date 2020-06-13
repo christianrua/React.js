@@ -11,7 +11,9 @@ function App() {
     <div>
       <Heading />
       {notes.map(noteItem => (
-        <Note title={noteItem.title}
+        <Note 
+          key={noteItem.key}
+          title={noteItem.title}
           content={noteItem.content}
          />
       ))}
