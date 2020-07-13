@@ -9,10 +9,17 @@ function App() {
 
   function handleChange(event){
 
+    const {value,name} = event.target;
+    //same as above
+    /* 
     const newValue =  event.target.value;
     const inputName  = event.target.name;
+    */
+
+    
 
     setContact(prevValue => {
+      /*
       if (inputName === "fName") {
         return {
           fName: newValue,
@@ -30,6 +37,11 @@ function App() {
             lName: prevValue.lName,
             email: newValue
           };
+      }*/
+      //same as above
+      return{
+        ...prevValue,
+        [name]:value
       }
     });
   }
